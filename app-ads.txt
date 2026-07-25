@@ -1,6 +1,17 @@
+# --- verified, keep as-is ---
 google.com, pub-8837182975038592, DIRECT, f08c47fec0942fa0
-
 smartadserver.com, 4194-OB, RESELLER, 060d053dcf45cbf3
 smartadserver.com, 4194, RESELLER, 060d053dcf45cbf3
 sharethrough.com, 4194-OB, RESELLER, 060d053dcf45cbf3
 sharethrough.com, 4194, RESELLER, 060d053dcf45cbf3
+
+# --- add these: live bidders, currently unauthorised ---
+# Chocolate Platform  -> ask for your seller ID + certification authority ID
+# OneTag Exchange     -> ask for your seller ID
+# OpenX               -> ask for your seller ID
+
+# --- add when you actually map these three ---
+mintegral.com, YOUR_MINTEGRAL_PUBLISHER_ID, DIRECT
+pangleglobal.com, YOUR_PANGLE_ACCOUNT_ID, DIRECT
+pubmatic.com, 161490, RESELLER, 5d62403b186f2ace
+# Liftoff Monetize    -> append their full entry list (see below)
