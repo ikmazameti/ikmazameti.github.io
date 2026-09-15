@@ -33,3 +33,24 @@ scrollUp.addEventListener("click", () => {
 // Auto-update copyright end year
 const currentYear = document.querySelector("#current-year");
 currentYear.textContent = new Date().getFullYear();
+
+// Reveal elements as they scroll into view
+if ("IntersectionObserver" in window) {
+  document.body.classList.add("has-reveal");
+
+  const revealObserver = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("in-view");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.15 }
+  );
+
+  document
+    .querySelectorAll(".reveal")
+    .forEach((el) => revealObserver.observe(el));
+}

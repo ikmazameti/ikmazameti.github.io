@@ -13,9 +13,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png" />
 
-  <!-- Animate CSS CDN -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <title>Mawuli Azameti | Software Developer | Kotlin | Android | KMP</title>
+  <title>Mawuli Azameti | Senior Android & Kotlin Developer | KMP</title>
 </head>
 
 <body>
@@ -24,8 +22,9 @@
     <h1>MAWULI AZAMETI</h1>
     <ul class="navigation">
       <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#apps" class="nav-link">Apps</a></li>
       <li><a href="#skills" class="nav-link">Skills</a></li>
-      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#projects" class="nav-link">Clients</a></li>
       <li><a href="#contact" class="nav-link">Contact</a></li>
     </ul>
     <button class="burger-menu" id="burger-menu">
@@ -37,80 +36,186 @@
   <!-- Hero Section -->
   <section class="hero" id="about">
     <img src="assets/images/developer.svg" alt="jane-doe" loading="lazy" class="hero-img" />
-    <div class="bio animate__animated animate__shakeX">
-      <h2 class="bio-title">About Me</h2>
+    <div class="bio reveal">
+      <h2 class="bio-title">Senior Android &amp; Kotlin Developer</h2>
       <p class="bio-text">
-        Mawuli Azameti is an Android Developer, Kotlin specialist. He has also started wetting his feet in Web
-        Development focusing on PHP,MySQL,Bootstrap & WordPress. He finished his degree in Computer Science from the
-        University of Ghana. He is very passionate about building robust software and contributing to open source.
+        He is a senior Android developer with 5+ years of experience specialising in Kotlin and
+        Kotlin Multiplatform (KMP). He independently designs, builds and ships apps on Google Play, alongside client and web work in Laravel and
+        WordPress. He holds a degree in Computer Science from the University of Ghana and is passionate about
+        building robust software.
       </p>
+      <div class="stats-bar reveal">
+        <div class="stat-card">
+          <span class="stat-number">5+</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">10</span>
+          <span class="stat-label">Apps Published</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">B.Sc.</span>
+          <span class="stat-label">Computer Science</span>
+        </div>
+      </div>
     </div>
+  </section>
+
+  <!-- Published Apps section -->
+  <section class="apps" id="apps">
+    <h2 class="apps-title reveal">Published Apps</h2>
+    <p class="apps-subtitle reveal">
+      A few of the apps I've designed, built and shipped independently on Google Play.
+    </p>
+    <div class="apps-container">
+      <a href="https://play.google.com/store/apps/details?id=com.eightbitstechnology.allbelievershymn"
+        target="_blank" class="app-card-link">
+        <div class="app-card project-card reveal">
+          <h3 class="app-name">All Believers Hymnal</h3>
+          <p class="app-details">Offline Christian hymns, worship songs and favourites.</p>
+          <span class="app-rating">4.7★ &middot; 1K+ installs</span>
+        </div>
+      </a>
+      <a href="https://play.google.com/store/apps/details?id=com.recflame.app" target="_blank" class="app-card-link">
+        <div class="app-card project-card reveal">
+          <h3 class="app-name">RecFlame: Screen Recorder</h3>
+          <p class="app-details">Record your screen quickly and easily.</p>
+          <span class="app-rating">4.64★ &middot; 1K+ installs</span>
+        </div>
+      </a>
+      <a href="https://play.google.com/store/apps/details?id=com.eightbitstechnology.smarttransactions"
+        target="_blank" class="app-card-link">
+        <div class="app-card project-card reveal">
+          <h3 class="app-name">Tally Up: Shopping List Total</h3>
+          <p class="app-details">Keep a running total while you shop.</p>
+          <span class="app-rating">5.0★ &middot; 100+ installs</span>
+        </div>
+      </a>
+    </div>
+    <a href="https://play.google.com/store/apps/dev?id=5586383562541729157" target="_blank" class="apps-cta">
+      View all apps on Google Play
+    </a>
   </section>
 
   <!-- Skills section -->
   <section class="skills" id="skills">
-    <h2 class="skill-header">My Top Skills</h2>
+    <h2 class="skill-header">Skills</h2>
 
     <div class="skills-wrapper">
-      <div class="first-set animate__animated animate__pulse">
-        <img src="assets/icons/android.png" alt="" loading="lazy" class="icon icon-card" />
-        <img src="assets/icons/kotlin.png" alt="" loading="lazy" class="icon icon-card" />
-        <img src="assets/icons/php.png" alt="" loading="lazy" class="icon icon-card" />
-        <img src="assets/icons/wordpress.png" alt="" loading="lazy" class="icon icon-card" />
+      <div class="skill-category-card reveal">
+        <h3 class="skills-category-title">Mobile</h3>
+        <div class="skills-category-icons">
+          <div class="skill-chip">
+            <img src="assets/icons/android.png" alt="" loading="lazy" class="skill-icon" />
+            <span>Android</span>
+          </div>
+          <div class="skill-chip">
+            <img src="assets/icons/kotlin.png" alt="" loading="lazy" class="skill-icon" />
+            <span>Kotlin</span>
+          </div>
+        </div>
       </div>
-      <div class="first-set animate__animated animate__pulse">
-        <img src="assets/icons/icons8-bootstrap.svg" alt="" loading="lazy" class="icon icon-card" />
-        <img src="assets/icons/mysql.svg" alt="" loading="lazy" class="icon icon-card" />
+      <div class="skill-category-card reveal">
+        <h3 class="skills-category-title">Web</h3>
+        <div class="skills-category-icons">
+          <div class="skill-chip">
+            <img src="assets/icons/php.png" alt="" loading="lazy" class="skill-icon" />
+            <span>PHP</span>
+          </div>
+          <div class="skill-chip">
+            <img src="assets/icons/mysql.svg" alt="" loading="lazy" class="skill-icon" />
+            <span>MySQL</span>
+          </div>
+          <div class="skill-chip">
+            <img src="assets/icons/wordpress.png" alt="" loading="lazy" class="skill-icon" />
+            <span>WordPress</span>
+          </div>
+          <div class="skill-chip">
+            <img src="assets/icons/icons8-bootstrap.svg" alt="" loading="lazy" class="skill-icon" />
+            <span>Bootstrap</span>
+          </div>
+          <div class="skill-chip">
+            <img src="assets/icons/icons8-html-5.svg" alt="" loading="lazy" class="skill-icon" />
+            <span>HTML5</span>
+          </div>
+          <div class="skill-chip">
+            <img src="assets/icons/icons8-css3.svg" alt="" loading="lazy" class="skill-icon" />
+            <span>CSS3</span>
+          </div>
+          <div class="skill-chip">
+            <img src="assets/icons/icons8-javascript.svg" alt="" loading="lazy" class="skill-icon" />
+            <span>JavaScript</span>
+          </div>
+        </div>
       </div>
-      <div class="second-set animate__animated animate__pulse">
-        <img src="assets/icons/icons8-git.svg" alt="" loading="lazy" class="icon icon-card" />
+      <div class="skill-category-card reveal">
+        <h3 class="skills-category-title">Tools</h3>
+        <div class="skills-category-icons">
+          <div class="skill-chip">
+            <img src="assets/icons/icons8-git.svg" alt="" loading="lazy" class="skill-icon" />
+            <span>Git</span>
+          </div>
+          <div class="skill-chip">
+            <img src="assets/icons/icons8-github-icon.png" alt="" loading="lazy" class="skill-icon" />
+            <span>GitHub</span>
+          </div>
+          <div class="skill-chip">
+            <img src="assets/icons/icons8-android-studio.png" alt="" loading="lazy" class="skill-icon" />
+            <span>Android Studio</span>
+          </div>
+          <div class="skill-chip">
+            <img src="assets/icons/icons8-firebase.png" alt="" loading="lazy" class="skill-icon" />
+            <span>Firebase</span>
+          </div>
+          <div class="skill-chip">
+            <img src="assets/icons/icons8-postman.png" alt="" loading="lazy" class="skill-icon" />
+            <span>Postman</span>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- My Work section -->
   <section class="projects" id="projects">
-    <h2 class="projects-title">MY WORK</h2>
+    <h2 class="projects-title">CLIENTS</h2>
     <div class="projects-container">
-      <div class="project-container project-card">
+      <div class="project-container project-card reveal">
         <img src="assets/images/bofams.jpeg" alt="expense-tracker" loading="lazy" class="project-pic" />
         <h3 class="project-title">Bofams Agrifield Ltd</h3>
         <p class="project-details">
-          Bofams Agrifield is an agrifirm that produces, aggregates, processes and markets fresh fruit and vegetables
-          such as mangoes,
-          okra, chilli pepper, garden egg etc. Our products are of high quality and certified by GlobalGAP for export.
+          Bofams Agrifield is an agribusiness that produces, aggregates, processes and exports
+          premium fresh mangoes. Their produce is GlobalGAP-certified, meeting the quality and
+          traceability standards required for international export.
         </p>
         <a href="http://bofamsagrifield.com" target="_blank" class="project-link">Check it Out</a>
-      </div>
-
-      <div class="project-container project-card">
-        <img src="assets/images/KYM.jpeg" alt="know your ministers" loading="lazy" class="project-pic" />
-        <h3 class="project-title">Know Your Ministers</h3>
-        <p class="project-details">
-          The app that simplifies the task of a user finding facts about the ministers of Ghana. It filters through the
-          oceans of information available and presents to the user just enough valuable information need.
-        </p>
-        <a href="https://github.com/ikmazameti/GhanaMinisters" target="_blank" class="project-link">Check it Out</a>
       </div>
     </div>
   </section>
 
   <!-- Contact section -->
   <section class="contact" id="contact">
-    <h2>Get In Touch With Me</h2>
-    <div class="contact-form-container animate__animated animate__shakeX">
-      <h2 class="projects-title">Gmail: mawulikazametibusiness@gmail.com</h2>
+    <h2 class="reveal">Let's Build Something Great</h2>
+    <div class="contact-form-container reveal">
+      <p class="contact-text">
+        Have a project in mind or an opportunity to discuss? I'd love to hear from you.
+      </p>
+      <a href="mailto:mawulikazametibusiness@gmail.com" class="contact-cta">Say Hello</a>
     </div>
   </section>
 
   <!-- Social accounts - Fixed to the right -->
   <div class="socials">
-    <a href="https://twitter.com/me_bigwig" target="_blank"><img src="assets/icons/icons8-twitter-circled.gif"
+    <a href="https://x.com/mawulikazameti" target="_blank"><img src="assets/icons/icons8-twitter-circled.gif"
         alt="Twitter" loading="lazy" class="socicon" /></a>
     <a href="https://www.linkedin.com/in/mawuli-azameti/" target="_blank"><img
         src="assets/icons/icons8-linkedin-circled.gif" alt="Linkedin" loading="lazy" class="socicon" /></a>
     <a href="https://github.com/ikmazameti" target="_blank"><img src="assets/icons/icons8-github.gif" alt="Github"
         class="socicon" /></a>
+    <a href="https://tiktok.com/@mawulikazameti" target="_blank"><img src="assets/icons/icons8-tiktok.png"
+        alt="TikTok" loading="lazy" class="socicon" /></a>
+    <a href="https://www.youtube.com/channel/UCPKDcK45jo3JItZk8FT9_0Q" target="_blank"><img
+        src="assets/icons/icons8-youtube.png" alt="YouTube" loading="lazy" class="socicon" /></a>
   </div>
 
   <!-- Scroll to top -->
