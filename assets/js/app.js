@@ -29,3 +29,7 @@ scrollUp.addEventListener("click", () => {
     behavior: "smooth",
   });
 });
+
+// Auto-update copyright end year
+const currentYear = document.querySelector("#current-year");
+currentYear.textContent = new Date().getFullYear();
