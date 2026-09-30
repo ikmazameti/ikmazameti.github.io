@@ -226,3 +226,6 @@ freewheel.tv, 536359-r-523319, RESELLER
 
 # Adagio - Adform
 adform.com, 3354, RESELLER, 9f5210a2f0999e32
+
+#Magnite
+rubiconproject.com, 22884, DIRECT, 0bfd66d529a55807
