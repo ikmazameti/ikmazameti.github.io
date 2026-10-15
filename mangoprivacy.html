@@ -63,7 +63,9 @@ footer{color:var(--muted);font-size:14px;border-top:1px solid var(--line);paddin
   <h2>The short version</h2>
   <ul>
     <li>Without an account, your farm records stay on your phone. We don't see them.</li>
-    <li>We only receive data if you choose <b>Back up</b> (Pro) and sign in with Google.</li>
+    <li>Your farm records only leave the phone after you sign in with Google (Pro or Business). From then on they upload automatically whenever the phone is online, so nothing recorded in the field is lost.</li>
+    <li>The app sends anonymous crash reports automatically (what went wrong, never your farm records) so we can fix problems quickly.</li>
+    <li>The optional <b>photo and voice assistant</b> reads photos and speech on your phone. Google's scanning tools send Google anonymous technical data, not your photos or words. You can switch the assistant off and type everything yourself.</li>
     <li>We don't sell your data, don't show ads, and don't share your farm records with buyers, exporters or anyone else.</li>
     <li>You can export your records or delete your account and data at any time.</li>
   </ul>
@@ -72,16 +74,24 @@ footer{color:var(--muted);font-size:14px;border-top:1px solid var(--line);paddin
 <section>
   <h2>1. Who we are</h2>
   <p>My Mango Manager ("the app") is made by <b>8Bits Technology</b>, based in Accra, Ghana ("we", "us"). We decide how personal data in the app is used.</p>
-  <p>Contact: <span class="ph">mawulikazametibusiness@gmail.com
-</span> · <span class="ph">Achimota, ACCRA, GHANA</span></p>
+  <p>Contact: <a href="mailto:mawulikazametibusiness@gmail.com">mawulikazametibusiness@gmail.com</a> · Achimota, Accra, Ghana</p>
 </section>
 
 <section>
   <h2>2. Two ways to use the app</h2>
   <h3>Free, on this phone only</h3>
   <p>You can use the app without creating an account. Everything you enter is stored in the app's private storage on your device: blocks, sprays, harvests, sales, expenses, pest checks, photos and voice notes. We don't receive it. If you uninstall the app or lose the phone without a backup, that data is gone.</p>
+  <h3>Photo and voice assistant (optional)</h3>
+  <p>You can record things the usual way, with buttons and the number pad, or let the assistant help. Point the camera at a chemical bottle, receipt or weighing ticket, or say what you did, and the assistant fills in the form for you to check. Nothing is saved until you tap <b>Yes, save</b>.</p>
+  <ul>
+    <li><b>Photos are read on your phone.</b> Text and barcodes are recognised by Google's ML Kit tools running on the device. The photo and the text read from it are not sent to us or to Google. The photo is kept on your phone with the record.</li>
+    <li><b>Technical data from those tools:</b> ML Kit sends Google anonymous diagnostic information, such as device and app details, how fast the tool ran, image size and error codes, so Google can keep the tools working. We don't receive this data.</li>
+    <li><b>Voice is turned into text on your phone</b> where your phone supports it (most phones with Android 12 or newer). A short recording of what you said is kept with the record as a voice note.</li>
+    <li><b>Older phones:</b> voice entry only works there if you turn on <b>Use Google voice typing</b> in Settings. Your speech is then sent to Google to be turned into text, under Google's privacy policy. This is off unless you turn it on.</li>
+    <li><b>To switch the assistant off:</b> Settings → <b>Photo and voice assistant</b> → Off. The scanning tools then never run, and every record is entered with buttons.</li>
+  </ul>
   <h3>Pro, with Back up and team sharing</h3>
-  <p>When you tap <b>Back up</b> and sign in with Google, a copy of your farm book is stored in the cloud. This lets you restore it on a new phone and share it with the people you invite. This section and the ones below describe what happens then.</p>
+  <p>When you sign in with Google, a copy of your farm book is stored in the cloud and kept up to date automatically. Everything you record, including farms and outgrowers registered offline in the field, is saved on the phone first and uploads by itself as soon as there's a connection. There's also a <b>Sync now</b> button. This lets you restore it on a new phone and share it with the people you invite. This section and the ones below describe what happens then.</p>
 </section>
 
 <section>
@@ -91,11 +101,13 @@ footer{color:var(--muted);font-size:14px;border-top:1px solid var(--line);paddin
     <thead><tr><th>Data</th><th>When</th><th>Why we use it</th></tr></thead>
     <tbody>
       <tr><td>Name, email address and Google account ID</td><td>When you sign in with Google (Pro)</td><td>To create your account, identify you to your team and let you sign in on other phones</td></tr>
-      <tr><td>Farm records: farm and block names, varieties, tree counts, sprays (product, dose, waiting days, operator name), harvests, sales (buyer name, weight, amount, payment status), expenses, fertilizer and pest records, notes</td><td>When you tap Back up</td><td>To keep a copy you can restore and to sync it to your team's phones</td></tr>
+      <tr><td>Farm records: farm and block names, varieties, tree counts, sprays (product, dose, waiting days, operator name), harvests, sales (buyer name, weight, amount, payment status), expenses, fertilizer and pest records, notes</td><td>Automatically after you sign in, whenever the phone is online</td><td>To keep a copy you can restore and to sync it to your team's phones</td></tr>
       <tr><td>Photos (for example a chemical bottle) and voice notes</td><td>Only if you turn on "Back up photos"</td><td>To show them on your other phones and to your team</td></tr>
       <tr><td>Team members' names, emails and roles</td><td>When you invite someone</td><td>To control who can see and add records</td></tr>
       <tr><td>Subscription status</td><td>When you buy or cancel Pro</td><td>To turn Pro features on or off. Google Play handles payment, and we never see your card or mobile money details.</td></tr>
-      <tr><td>Crash reports (device model, Android version, error details)</td><td>Only if you turn on "Send crash reports"</td><td>To find and fix bugs</td></tr>
+      <tr><td>Crash reports (device model, Android version, app version, the error and where in the app it happened; never your farm records, photos or voice notes)</td><td>Automatically, when the app crashes or hits a serious error</td><td>To find and fix bugs quickly. Sent through Google Firebase Crashlytics.</td></tr>
+      <tr><td>Anonymous diagnostics from Google's ML Kit (device and app details, performance, image size, error codes, not photos or text)</td><td>When the photo assistant scans something (switch it off in Settings)</td><td>Collected by Google to run and improve its on-device scanning tools. We don't receive it.</td></tr>
+      <tr><td>Your speech audio</td><td>Only if you turn on "Use Google voice typing" (older phones)</td><td>Sent to Google to turn speech into text. On newer phones this happens on the device and nothing is sent.</td></tr>
     </tbody>
   </table>
   </div>
@@ -105,19 +117,21 @@ footer{color:var(--muted);font-size:14px;border-top:1px solid var(--line);paddin
 <section>
   <h2>4. Phone permissions</h2>
   <ul>
-    <li><b>Camera:</b> only when you tap "Take a photo of the bottle". Photos stay on your phone unless you back them up.</li>
-    <li><b>Microphone:</b> only when you record a voice note.</li>
-    <li><b>Internet:</b> only used for sign-in, Back up, subscriptions and (if you turn them on) crash reports. The rest of the app works offline.</li>
+    <li><b>Camera:</b> only when you take a photo or scan a bottle, receipt, ticket, card or QR code. Photos stay on your phone unless you back them up.</li>
+    <li><b>Microphone:</b> only while you record a voice note or speak to the assistant.</li>
+    <li><b>Internet:</b> used for sign-in, Back up and subscriptions, for crash reports, for automatic upload after you sign in, for Google voice typing (only if you turn it on), and by Google's scanning tools for anonymous diagnostics and model downloads. Recording works offline.</li>
   </ul>
   <p>You can refuse or turn off camera and microphone access in Android settings. The rest of the app keeps working.</p>
 </section>
 
 <section>
   <h2>5. Who else processes your data</h2>
-  <p>We use these services to run Pro. Each handles data only to provide its service to us:</p>
+  <p>We use these services to run the app, Pro and Business. Each handles data only to provide its service:</p>
   <ul>
     <li><b>Google Firebase</b> (Authentication, Cloud Firestore, Cloud Storage, Crashlytics): sign-in, cloud copy of records and photos, crash reports. Data may be stored on Google servers outside Ghana.</li>
     <li><b>Google Play Billing:</b> subscription payments, under Google's own privacy policy.</li>
+    <li><b>Google ML Kit</b> (through Google Play services): on-device text and barcode recognition for the photo assistant. It sends Google anonymous diagnostics as described in section 2.</li>
+    <li><b>Google speech recognition:</b> on-device on supported phones. It only sends audio to Google if you turn on Google voice typing.</li>
   </ul>
   <p>Inside your farm, everyone you invite can see the shared farm book. Your role settings decide who can add or delete records. We don't share your data with anyone else unless the law requires it. That includes buyers, exporters, input sellers, government agencies and data brokers.</p>
 </section>
@@ -146,8 +160,7 @@ footer{color:var(--muted);font-size:14px;border-top:1px solid var(--line);paddin
   <h2>8. Deleting your account and data</h2>
   <div class="callout">
     <p><b>In the app:</b> Settings → Delete my account and data → Delete. This removes your account and the farm's cloud copy if you're the owner. If you're a team member, it removes your access and your profile.</p>
-    <p style="margin:0"><b>Without the app:</b> email <span class="ph">mawulikazametibusiness@gmail.com
-</span> from the Google account you signed in with, with the subject "Delete my account". We'll confirm and delete within 30 days.</p>
+    <p style="margin:0"><b>Without the app:</b> email <a href="mailto:mawulikazametibusiness@gmail.com">mawulikazametibusiness@gmail.com</a> from the Google account you signed in with, with the subject "Delete my account". We'll confirm and delete within 30 days.</p>
   </div>
   <p style="margin-top:10px">Records on your phone are deleted when you clear the app's data or uninstall it. To keep a copy first, use Settings → Export all data (CSV).</p>
 </section>
@@ -159,24 +172,35 @@ footer{color:var(--muted);font-size:14px;border-top:1px solid var(--line);paddin
     <li>tell you what personal data we hold about you and give you a copy</li>
     <li>correct data that is wrong</li>
     <li>delete your data, or stop using it</li>
-    <li>withdraw consent. For example, stop backing up, turn off crash reports, or sign out.</li>
+    <li>withdraw consent. For example, sign out to stop uploading, or delete your account and data.</li>
   </ul>
-  <p>Write to <span class="ph">mawulikazametibusiness@gmail.com
-</span>. We reply within 30 days. If you're not satisfied, you can complain to the Data Protection Commission of Ghana or your local data protection authority.</p>
+  <p>Write to <a href="mailto:mawulikazametibusiness@gmail.com">mawulikazametibusiness@gmail.com</a>. We reply within 30 days. If you're not satisfied, you can complain to the Data Protection Commission of Ghana or your local data protection authority.</p>
+</section>
+
+<section id="business">
+  <h2>10. Business accounts and outgrower data</h2>
+  <p>Companies that run outgrower schemes (for example, mango exporters and aggregators) can use the app's Outgrowers module to register farmers who grow for them.</p>
+  <ul>
+    <li><b>Who is responsible:</b> the company running the scheme is the data controller for its outgrowers' data and decides what it collects and why. 8Bits Technology stores and processes that data only to provide the app to the company.</li>
+    <li><b>What may be recorded about an outgrower:</b> name, phone and mobile money number, gender, year of birth, community, district and region, an optional ID number (such as a Ghana Card number), a photo, farm locations and sizes, tree counts and varieties, visit and inspection results, training attendance, inputs given on credit, fruit purchases and payments, and copies of signed agreements and consent.</li>
+    <li><b>Why:</b> to manage the scheme (visits, training, inputs and credit), to buy fruit and pay farmers, and to meet group certification requirements such as GLOBALG.A.P.</li>
+    <li><b>Who sees it:</b> the company's authorised staff, and certification auditors when the company shares records with them. We don't use outgrower data for any other purpose and don't sell it.</li>
+    <li><b>Consent and rights:</b> the company records each outgrower's consent at enrolment. Outgrowers who want to see, correct or remove their data should contact the company that enrolled them. We'll help the company respond.</li>
+    <li><b>Safeguards:</b> ID numbers are optional and hidden in lists, exports containing them are limited to the account owner, and compliance documents are backed up and encrypted.</li>
+  </ul>
 </section>
 
 <section>
-  <h2>10. Children</h2>
+  <h2>11. Children</h2>
   <p>The app is made for farmers and farm businesses and isn't directed at children under 13. We don't knowingly collect their personal data. If you believe a child has given us personal data, contact us and we'll delete it.</p>
 </section>
 
 <section>
-  <h2>11. Changes to this policy</h2>
+  <h2>12. Changes to this policy</h2>
   <p>If we change this policy, we'll update the date at the top. If the change is important, we'll tell you in the app before it takes effect.</p>
 </section>
 
-<footer>© 2026 8Bits Technology | My Mango Manager | Questions: <span class="ph">mawulikazametibusiness@gmail.com
-</span></footer>
+<footer>© 2026 8Bits Technology · My Mango Manager · Questions: <a href="mailto:mawulikazametibusiness@gmail.com">mawulikazametibusiness@gmail.com</a></footer>
 </div>
 </body>
 </html>
