@@ -11,8 +11,8 @@ sharethrough.com, 4194, RESELLER, 060d053dcf45cbf3
 # OpenX               -> ask for your seller ID
 
 # --- add when you actually map these three ---
-mintegral.com, YOUR_MINTEGRAL_PUBLISHER_ID, DIRECT
-pangleglobal.com, YOUR_PANGLE_ACCOUNT_ID, DIRECT
+# mintegral.com, YOUR_MINTEGRAL_PUBLISHER_ID, DIRECT
+# pangleglobal.com, YOUR_PANGLE_ACCOUNT_ID, DIRECT
 pubmatic.com, 161490, RESELLER, 5d62403b186f2ace
 # Liftoff Monetize    -> append their full entry list (see below)
 
