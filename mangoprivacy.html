@@ -55,11 +55,12 @@ footer{color:var(--muted);font-size:14px;border-top:1px solid var(--line);paddin
     <span class="meta">My Mango Manager: Farm Records</span>
   </div>
   <h1>Privacy Policy</h1>
-  <span class="meta">Effective 15 October 2026 · Last updated 19 October 2026</span>
+  <span class="meta">Effective 15 October 2026 · Last updated 5 November 2026</span>
 </header>
 
 <div class="summary">
   <h2>The short version</h2>
+  <p>This policy covers both of our mango apps: My Mango Manager (com.bofamsagrifield.bos) and Mango Farm Records (com.bofamsagrifield.mango), the farmer app, which is the same record book without the outgrower module.</p>
   <ul>
     <li>Without an account, your farm records stay on your phone. We don't see them.</li>
     <li>Your farm records only leave the phone after you sign in with Google (Pro or Business). From then on they upload automatically whenever the phone is online, so nothing recorded in the field is lost.</li>
@@ -106,10 +107,11 @@ footer{color:var(--muted);font-size:14px;border-top:1px solid var(--line);paddin
       <tr><td>Farm records: farm and block names, varieties, tree counts, sprays (product, dose, waiting days, operator name), harvests, sales (buyer name, weight, amount, payment status), expenses, fertilizer and pest records, notes</td><td>Automatically after you sign in, whenever the phone is online</td><td>To keep a copy you can restore and to sync it to your team's phones</td></tr>
       <tr><td>Farm details from the My farm screen: farm name, owner name, phone number, region, district and community, and the farm's position if you saved one</td><td>Stored on your phone. Uploaded with your farm records after you sign in</td><td>To fill in your invoices and reports, and to show the farm to your team</td></tr>
       <tr><td>Buyers and invoices: buyer name and phone, what they bought, amounts, payments, and any tax number or payment details you add to your invoices</td><td>Stored on your phone. Uploaded with your farm records after you sign in</td><td>To make invoices and track what buyers owe</td></tr>
-      <tr><td>Photos (for example a chemical bottle) and voice notes</td><td>Only if you turn on "Back up photos and voice notes"</td><td>To show them on your other phones and to your team</td></tr>
+      <tr><td>Photos (for example a chemical bottle, a farmer or an agreement, a training sheet, your invoice logo) and voice notes</td><td>When you are signed in and "Back up photos and voice notes" is on. It is on when you first sign in; switch it off in Settings to keep photos on the phone only</td><td>To show them on your other phones and to your team</td></tr>
       <tr><td>Team members' names, emails and roles</td><td>When you invite someone</td><td>To control who can see and add records</td></tr>
       <tr><td>Subscription status</td><td>When you buy or cancel Pro</td><td>To turn Pro features on or off. Google Play handles payment, and we never see your card or mobile money details.</td></tr>
       <tr><td>Crash reports (device model, Android version, app version, the error and where in the app it happened; never your farm records, photos or voice notes)</td><td>Automatically, when the app crashes or hits a serious error</td><td>To find and fix bugs quickly. Sent through Google Firebase Crashlytics.</td></tr>
+      <tr><td>A push-message token (a random ID for this phone; Bofams business owners and managers only)</td><td>Only while you are signed in and <b>Tell me when a form arrives</b> is on; it is deleted when you sign out or turn it off</td><td>To tell you when a farmer's Google Form response is waiting. The message says only that a form arrived, never the farmer's answers. Sent through Firebase Cloud Messaging.</td></tr>
       <tr><td>Usage statistics (a random app ID, which screens are opened and for how long, app version, device model, Android version, and the country worked out from the internet connection; never your farm records, names, phone numbers, photos or voice notes, and no advertising ID)</td><td>Automatically while you use the app</td><td>To understand which parts of the app are used, so we can improve them. Sent through Google Analytics for Firebase.</td></tr>
       <tr><td>Anonymous diagnostics from Google's ML Kit (device and app details, performance, image size, error codes, not photos or text)</td><td>When the photo assistant scans something (switch it off in Settings)</td><td>Collected by Google to run and improve its on-device scanning tools. We don't receive it.</td></tr>
       <tr><td>Your speech audio</td><td>Only if you turn on "Use Google voice typing" (older phones)</td><td>Sent to Google to turn speech into text. On newer phones this happens on the device and nothing is sent.</td></tr>
@@ -125,7 +127,7 @@ footer{color:var(--muted);font-size:14px;border-top:1px solid var(--line);paddin
     <li><b>Camera:</b> only when you take a photo or scan a bottle, receipt, ticket, card or QR code. Photos stay on your phone unless you back them up.</li>
     <li><b>Microphone:</b> only while you record a voice note or speak to the assistant.</li>
     <li><b>Location (only when you tap "Use this phone's location"):</b> asked for the first time you tap it, on the My farm screen or, for Business outgrower officers, on a farm visit. It is read only at that moment to save the farm's position, and it stays on your phone unless you sign in and back up. Never in the background, never tracked. You can type or paste the position instead.</li>
-    <li><b>Notifications:</b> asked only when you tap <b>Remind me</b> (Android 13 and newer), to show your reminders. The app also restarts its morning reminder after the phone restarts.</li>
+    <li><b>Notifications:</b> asked only when you tap <b>Remind me</b> or <b>Tell me when a form arrives</b> (Android 13 and newer), to show your reminders and form alerts. The app also restarts its morning reminder after the phone restarts.</li>
     <li><b>Internet:</b> used for sign-in, Back up and subscriptions, for crash reports and usage statistics, for automatic upload after you sign in, for Google voice typing (only if you turn it on), and by Google's scanning tools for anonymous diagnostics and model downloads. Recording works offline.</li>
   </ul>
   <p>You can refuse or turn off camera, microphone and location access in Android settings. The rest of the app keeps working.</p>
@@ -135,7 +137,7 @@ footer{color:var(--muted);font-size:14px;border-top:1px solid var(--line);paddin
   <h2>5. Who else processes your data</h2>
   <p>We use these services to run the app, Pro and Business. Each handles data only to provide its service:</p>
   <ul>
-    <li><b>Google Firebase</b> (Authentication, Cloud Firestore, Cloud Storage, Crashlytics, Google Analytics for Firebase): sign-in, cloud copy of records and photos, crash reports, usage statistics. Data may be stored on Google servers outside Ghana.</li>
+    <li><b>Google Firebase</b> (Authentication, Cloud Firestore, Cloud Storage, Crashlytics, Google Analytics for Firebase, Cloud Messaging): sign-in, cloud copy of records and photos, crash reports, usage statistics, form alerts. Data may be stored on Google servers outside Ghana.</li>
     <li><b>Google Play Billing:</b> subscription payments, under Google's own privacy policy.</li>
     <li><b>Google ML Kit</b> (through Google Play services): on-device text and barcode recognition for the photo assistant. It sends Google anonymous diagnostics as described in section 2.</li>
     <li><b>Google speech recognition:</b> on-device on supported phones. It only sends audio to Google if you turn on Google voice typing.</li>
@@ -189,7 +191,7 @@ footer{color:var(--muted);font-size:14px;border-top:1px solid var(--line);paddin
   <p>Companies that run outgrower schemes (for example, mango exporters and aggregators) can use the app's Outgrowers module to register farmers who grow for them.</p>
   <ul>
     <li><b>Who is responsible:</b> the company running the scheme is the data controller for its outgrowers' data and decides what it collects and why. 8Bits Technology stores and processes that data only to provide the app to the company.</li>
-    <li><b>What may be recorded about an outgrower:</b> name, phone and mobile money number, gender, year of birth, community, district and region, an optional ID number (such as a Ghana Card number), a photo, farm locations and sizes, tree counts and varieties, visit and inspection results, training attendance, inputs given on credit, fruit purchases and payments, signatures drawn on the phone (for agreements, visits and inputs received), and copies of signed agreements and consent.</li>
+    <li><b>What may be recorded about an outgrower:</b> name, phone, payment details (mobile money number and the name on the account, or bank, branch, account name and number, sort and SWIFT codes), gender, year of birth, community, district and region, an optional ID number (such as a Ghana Card number), a photo, farm locations and sizes, tree counts and varieties, visit and inspection results, training attendance, inputs given on credit, fruit purchases and payments, signatures drawn on the phone or photographed on paper (for agreements, visits, inputs received, waybills and intake reports), and, for a farmer who can't sign, a photo of their thumb together with the name and drawn signature of the witness who read the document to them, waybills for fruit sent to buyers, the buyer's intake results (weights, quality and what was paid for), and copies of signed agreements and consent.</li>
     <li><b>Sign-up forms:</b> a company can connect its own Google Form so new farmers' answers arrive in the app. The company's staff check each answer and accept or reject it. The form and its answers are held in the company's Google account under Google's privacy policy.</li>
     <li><b>Why:</b> to manage the scheme (visits, training, inputs and credit), to buy fruit and pay farmers, and to meet group certification requirements such as GLOBALG.A.P.</li>
     <li><b>Who sees it:</b> the company's authorised staff, and certification auditors when the company shares records with them. We don't use outgrower data for any other purpose and don't sell it.</li>
